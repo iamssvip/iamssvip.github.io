@@ -23,3 +23,23 @@ var jiexi5 = function() {
     var iframe = document.getElementById("iframe_box");
     iframe.src = "https://api.52xmw.com/?url=" + url;
 }
+var jiexi6 = function() {
+    var url = document.getElementById("text").value;
+    var iframe = document.getElementById("iframe_box");
+    iframe.src = "http://jx.598110.com/?url=" + url;
+}
+var xuanzejiekou = function() {
+    var url = document.getElementById("text").value;
+    var iframe = document.getElementById("iframe_box");
+
+
+    var obj = document.getElementById("select1"); //定位id
+
+    //var index = obj.selectedIndex; // 选中索引
+
+    //var text = obj.options[index].text; // 选中文本
+
+    var value = obj.value; // 选中值
+
+    iframe.src = value + url;
+}
